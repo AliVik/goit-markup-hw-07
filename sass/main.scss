@@ -1,3 +1,13 @@
-h1 {
-  background-color: #fff;
-}
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/none-list-style";
+@import "./utils/flex-list";
+
+// BASE
+@import "./base/styles-reset";
+
+// LAYOUT
+@import "./layout/header";
+
+// COMPONENTS
