@@ -1,4 +1,142 @@
-h1 {
-  background-color: #fff;
+:root {
+  --main-white-color: #ffffff;
+  --secondary-color: #f5f4fa;
+  --extra-color: #2196f3;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --buttons-color: #f5f4fa;
+  --time: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.flex-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-white-color);
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-padd {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.navigation-list .current {
+  position: relative;
+  color: var(--extra-color);
+}
+
+.navigation-list .current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 29px;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--extra-color);
+}
+
+.header-flex {
+  display: flex;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.auth-list {
+  margin-left: auto;
+}
+
+.nav-list > .nav-item + .nav-item,
+.auth-list > .nav-item + .nav-item {
+  margin-left: 50px;
+}
+
+.header-letter {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-letter:hover,
+.header-tel:hover {
+  fill: currentColor;
+}
+
+.header-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-flex {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  list-style-type: none;
+}
+
+.navigation-list .link {
+  display: block;
+  color: var(--main-text-color);
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
