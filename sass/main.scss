@@ -1,13 +1,16 @@
 // UTILS
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-@import "./utils/none-list-style";
 @import "./utils/flex-list";
 
 // BASE
 @import "./base/styles-reset";
+@import "./base/container";
 
 // LAYOUT
 @import "./layout/header";
+@import "./layout/hero";
 
 // COMPONENTS
+
+@import "./components/logo";
