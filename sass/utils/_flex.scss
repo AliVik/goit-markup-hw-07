@@ -1,0 +1,10 @@
+.flex-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-list > .flex-item + .flex-item,
+.flex-list > .flex-img + .flex-img,
+.flex-list > .names + .names {
+  margin-left: 30px;
+}

@@ -1,16 +1,23 @@
 // UTILS
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-@import "./utils/flex-list";
+@import "./utils/flex";
 
 // BASE
 @import "./base/styles-reset";
 @import "./base/container";
+@import "./base/sections";
 
 // LAYOUT
-@import "./layout/header";
+@import "./layout/page-header";
 @import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/team";
+@import "./layout/regular-customers";
 
 // COMPONENTS
 
 @import "./components/logo";
+@import "./components/modal-button";
+@import "./components/headers";
+@import "./components/social-icons";

@@ -1,0 +1,29 @@
+.names-img {
+  display: block;
+  width: 100%;
+}
+.names {
+  line-height: 1.2;
+}
+.names h3 {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.names p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+.names-desc {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}

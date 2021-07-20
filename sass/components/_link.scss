@@ -1,0 +1,8 @@
+.link {
+  padding: 8px 0;
+  transition: color var(--time) var(--timing-function);
+}
+.link:hover,
+.link:focus {
+  color: var(--extra-color);
+}
