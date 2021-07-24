@@ -1,8 +1,12 @@
-.names-img {
+.team {
+  @extend %flex-list;
+}
+
+.team__img {
   display: block;
   width: 100%;
 }
-.names {
+.team__name-card {
   line-height: 1.2;
 }
 .names h3 {
@@ -16,7 +20,7 @@
   color: var(--secondary-text-color);
   text-align: center;
 }
-.names-desc {
+.team__name-description {
   display: flex;
   flex-direction: column;
   align-content: center;
