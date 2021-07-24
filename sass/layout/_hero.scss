@@ -14,11 +14,11 @@
   background-size: cover;
   margin: 0 auto;
 }
-.hero-name {
+.hero__name {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  color: var(--main-white-color);
+  color: $main-white-color;
   text-transform: uppercase;
 }
