@@ -2,18 +2,14 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/flex";
+@import "./utils/link";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 // BASE
 @import "./base/styles-reset";
 @import "./base/container";
 @import "./base/sections";
-
-// LAYOUT
-@import "./layout/page-header";
-@import "./layout/hero";
-@import "./layout/advantages";
-@import "./layout/team";
-@import "./layout/regular-customers";
 
 // COMPONENTS
 
@@ -21,3 +17,13 @@
 @import "./components/modal-button";
 @import "./components/headers";
 @import "./components/social-icons";
+
+// LAYOUT
+@import "./layout/page-header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/team";
+@import "./layout/regular-customers";
+@import "./layout/footer";
+@import "./layout/modal-window";
+@import "./layout/modal-form";
