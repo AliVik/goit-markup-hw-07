@@ -8,11 +8,11 @@
   text-decoration: none;
 }
 .navigation__logo-text {
-  color: var(--extra-color);
+  color: $extra-color;
 }
 
 .backlogo {
-  color: var(--main-white-color);
+  color: $main-white-color;
 }
 .navigation__logo .foot-logo {
   margin-bottom: 20px;

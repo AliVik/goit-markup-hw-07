@@ -31,11 +31,11 @@
   height: 100%;
   border-radius: 50%;
   fill: #afb1b8;
-  transition: background-color var(--time) var(--timing-function),
-    fill var(--time) var(--timing-function);
+  transition: background-color $time $timing-function,
+    fill $time $timing-function;
 }
 .names-icons-bg:hover,
 .names-icons-bg:focus {
-  background-color: var(--extra-color);
-  fill: var(--main-white-color);
+  background-color: $extra-color;
+  fill: $main-white-color;
 }
