@@ -30,7 +30,7 @@
 }
 .nav-list__link {
   display: block;
-  color: var(--main-text-color);
+  color: $main-text-color;
   text-decoration: none;
   @extend %link;
 
@@ -63,7 +63,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     text-decoration: none;
 
     @include flex(center);
