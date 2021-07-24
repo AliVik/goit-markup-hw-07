@@ -1,4 +1,4 @@
-.navigation-logo {
+.navigation__logo {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -7,6 +7,13 @@
   color: #000000;
   text-decoration: none;
 }
-.logo {
+.navigation__logo-text {
   color: var(--extra-color);
+}
+
+.backlogo {
+  color: var(--main-white-color);
+}
+.navigation__logo .foot-logo {
+  margin-bottom: 20px;
 }
