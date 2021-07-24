@@ -1,33 +1,36 @@
 .regular-customers {
   display: flex;
   justify-content: center;
-}
-.reg-customer + .reg-customer {
-  margin-left: 30px;
-}
-.reg-customer {
-  display: flex;
-  width: 170px;
-  height: 92px;
-}
-.regular-customers-box:hover,
-.regular-customers-box:focus {
-  border: 1px solid var(--extra-color);
-  fill: var(--extra-color);
-}
-.regular-customers-box {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  align-items: center;
-  transition: border var(--time) var(--timing-function),
-    fill var(--time) var(--timing-function);
-}
-.regular-custumers-items {
-  width: 106px;
-  height: 60px;
-  margin: 0 auto;
+  margin-left: -30px;
+
+  &__item {
+    display: flex;
+    max-width: 170px;
+    height: 92px;
+    margin-left: 30px;
+    flex-basis: calc((100%-180px) / 6);
+  }
+
+  &__box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    align-items: center;
+    transition: border $time $timing-function, fill $time $timing-function;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $extra-color;
+      fill: $extra-color;
+    }
+  }
+
+  &__icons {
+    width: 106px;
+    height: 60px;
+    margin: 0 auto;
+  }
 }
