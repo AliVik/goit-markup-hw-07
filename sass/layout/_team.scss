@@ -7,14 +7,17 @@
   }
   &__name-card {
     line-height: 1.2;
+
+    & + & {
+      margin-left: 30px;
+    }
   }
   &__social-icons {
     @extend %social-icons;
   }
   &__name-description {
-    display: flex;
+    @include flex(center);
     flex-direction: column;
-    align-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: $main-white-color;
@@ -33,12 +36,36 @@
     color: $secondary-text-color;
     text-align: center;
   }
-}
+  &__social-icons-item {
+    @include flex(center);
+    width: 44px;
 
-.team__social-icons--bg {
-  @extend %social-icons--bg;
+    & + & {
+      margin-left: 10px;
+    }
+  }
+  &__social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+    transition: background-color $time $timing-function,
+      fill $time $timing-function;
 
-  & + & {
-    margin-left: 10px;
+    &:hover,
+    &:focus {
+      background-color: $extra-color;
+      fill: $main-white-color;
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+    }
+  }
+  &__social-icon {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin: 0 auto;
   }
 }
