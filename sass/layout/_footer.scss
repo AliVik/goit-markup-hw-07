@@ -1,113 +1,139 @@
-.foot-padd {
+.footer {
   padding-bottom: 60px;
   padding-top: 60px;
   background-color: #2f303a;
   background-position: center;
   max-height: 252px;
-}
-.footaddress {
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-}
-.address {
-  display: block;
-  color: var(--main-white-color);
-  text-decoration: none;
-  margin-bottom: 9px;
-}
-.footcontacts {
-  display: block;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  margin-bottom: 9px;
+
+  &__flex-contacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__logo-text--change {
+    color: $main-white-color;
+  }
+
+  &__direction {
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+  }
+
+  &__address {
+    display: block;
+    color: $main-white-color;
+    text-decoration: none;
+    margin-bottom: 9px;
+  }
+
+  &__contacts {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin-bottom: 9px;
+  }
+
+  &__join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+    width: 206px;
+    height: 80px;
+  }
+
+  &__join-text {
+    @extend %white-uppercase-text;
+  }
+
+  &__icons-list {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+
+  &__social-icons-item {
+    @include flex(center);
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+    flex-basis: calc((100%-40px) / 4);
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+
+  &__social-link {
+    @include flex(center);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $main-white-color;
+    transition: background-color $time $timing-function,
+      fill $time $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $extra-color;
+      fill: $main-white-color;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin: 0 auto;
+  }
 }
 
-.white-uppercase-text {
-  color: var(--main-white-color);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  align-self: flex-start;
-}
-.footer-flex {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-.join {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 70px;
-  width: 206px;
-  height: 80px;
-}
-
-.footer-icons {
-  display: flex;
-  margin-top: 20px;
-}
-.footer-icons-bg {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--main-white-color);
-  transition: background-color var(--time) var(--timing-function),
-    fill var(--time) var(--timing-function);
-}
-.footer-icons-bg:hover,
-.footer-icons-bg:focus {
-  background-color: var(--extra-color);
-  fill: var(--main-white-color);
-}
 .sign-up {
   margin-left: 93px;
-}
-.telegram-sign-up {
-  display: flex;
-  align-items: baseline;
-}
-.sign-up-input {
-  width: 358px;
-  height: 50px;
-  margin-top: 20px;
-  margin-right: 12px;
-  padding: 15px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background-color: transparent;
-  color: var(--main-white-color);
-}
-.sign-up-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.sign-up-button {
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 28px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--main-white-color);
-  background-color: var(--extra-color);
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  text-align: center;
-}
-.sign-up-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+
+  &__text {
+    @extend %white-uppercase-text;
+  }
+
+  &__telegram {
+    @include flex(center, baseline);
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: transparent;
+    color: $main-white-color;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__button {
+    @include flex(center);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
 }
