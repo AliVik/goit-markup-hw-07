@@ -1,0 +1,12 @@
+@mixin flex($js: "justify") {
+  display: flex;
+  align-items: center;
+  justify-content: $js;
+}
+
+@mixin auth-icons($w, $h) {
+  width: $w;
+  height: $h;
+  margin-right: 10px;
+  fill: currentColor;
+}
