@@ -1,7 +1,7 @@
 .regular-customers {
-  display: flex;
-  justify-content: center;
+  @include flex(center);
   margin-left: -30px;
+  margin: 0 auto;
 
   &__item {
     display: flex;
@@ -9,6 +9,10 @@
     height: 92px;
     margin-left: 30px;
     flex-basis: calc((100%-180px) / 6);
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
   }
 
   &__box {
