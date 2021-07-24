@@ -10,6 +10,7 @@
 
 %flex-list {
   display: flex;
+  align-content: center;
   justify-content: space-between;
 }
 
@@ -21,4 +22,21 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   align-self: flex-start;
+}
+
+%social-icons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+%social-icons--bg {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
 }
