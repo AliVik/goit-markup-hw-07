@@ -30,11 +30,6 @@
     cursor: pointer;
     background-color: transparent;
     transition: color $time $timing-function;
-
-    &:hover,
-    &:focus ~ .modal-window__cross-icon {
-      fill: $extra-color;
-    }
   }
 
   &__close-icon {
@@ -42,6 +37,13 @@
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+  }
+}
+
+.modal-window__close-butt:hover,
+.modal-window__close-butt:focus {
+  .modal-window__cross-icon {
+    fill: $extra-color;
   }
 }
 
