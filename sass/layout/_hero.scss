@@ -13,11 +13,11 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-
-  &__modal-button {
-    padding: 10px 32px;
-  }
 }
+.hero__modal-button {
+  padding: 10px 32px;
+}
+
 .hero__name {
   margin-bottom: 30px;
   font-weight: 900;
