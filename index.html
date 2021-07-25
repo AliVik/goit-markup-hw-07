@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/commonstyles.css">
-   </head>
+</head>
 
 <body>
     <!-- Шапка -->
@@ -399,52 +398,52 @@
                     <use href="./images/icons.svg#icon-close" class="modal-window__cross-icon"></use>
                 </svg>
             </button>
-            <form class="order-service">
-                <p class="form-legend-text">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+                <p class="modal-form__text">Оставьте свои данные, мы вам перезвоним</p>
                     <ul>
-                        <li class="list modal-list">
-                            <label for="user-name" class="label-text">Имя</label>
-                            <div class="input-relative">
-                                <input type="text" name="user-name" id="user-name" class="modal-input" required>
-                                <svg class="modal-list-icons">
+                        <li class="list modal-form__list-item">
+                            <label for="user-name" class="modal-form__label-text">Имя</label>
+                            <div class="modal-form__relative-input">
+                                <input type="text" name="user-name" id="user-name" class="modal-form__input" required minlength="3">
+                                <svg class="modal-form__icons">
                                     <use href="./images/icons.svg#icon-person-black"></use>
                                 </svg>
                             </div>
                             
                         </li>
-                        <li class="list modal-list">
-                            <label for="user-tel" class="label-text">Телефон</label>
-                            <div class="input-relative">
-                                <input type="tel" name="user-tel" id="user-tel" class="modal-input" required>
-                                <svg class="modal-list-icons">
+                        <li class="list modal-form__list-item">
+                            <label for="user-tel" class="modal-form__label-text">Телефон</label>
+                            <div class="modal-form__relative-input">
+                                <input type="tel" name="user-tel" id="user-tel" class="modal-form__input" required pattern="\[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" title="Введите номер в формате 093-333-33-33" minlength="10">
+                                <svg class="modal-form__icons">
                                     <use href="./images/icons.svg#icon-phone-black"></use>
                                 </svg>
                             </div>
                             
                         </li>
-                        <li class="list modal-list">
-                            <label for="user-mail" class="label-text">Почта</label>
-                            <div class="input-relative">
-                                <input type="email" name="user-mail" id="user-mail" class="modal-input" required>
-                                <svg class="modal-list-icons">
+                        <li class="list modal-form__list-item">
+                            <label for="user-mail" class="modal-form__label-text">Почта</label>
+                            <div class="modal-form__relative-input">
+                                <input type="email" name="user-mail" id="user-mail" class="modal-form__input" required>
+                                <svg class="modal-form__icons">
                                     <use href="./images/icons.svg#icon-email-black"></use>
                                 </svg>
                             </div>
                             
                         </li>
-                        <li class="list modal-list">
-                            <label for="user-comment" class="label-text">Комментарий</label>
-                            <textarea name="user-comment" id="user-comment" placeholder="Введите текст" class="modal-input comment-area"></textarea>
+                        <li class="list modal-form__list-item">
+                            <label for="user-comment" class="modal-form__label-text">Комментарий</label>
+                            <textarea name="user-comment" id="user-comment" placeholder="Введите текст" class="modal-form__input modal-form__comment-area"></textarea>
                         </li>
                                        
                     </ul>
                     <div class="policy-checkbox">
-                        <input type="checkbox" name="policy" id="policy" required class="checkbox visually-hidden">
-                        <label for="policy" class="policy-text">Соглашаюсь с рассылкой и принимаю &nbsp <a href="" class="policy-link">Условия
+                        <input type="checkbox" name="policy" id="policy" required class="policy-checkbox__input visually-hidden">
+                        <label for="policy" class="policy-checkbox__text">Соглашаюсь с рассылкой и принимаю &nbsp <a href="" class="policy-checkbox__link">Условия
                             договора</a>
                         </label>
                     </div>
-                    <button type="submit" class="send-form-butt">Отправить</button>
+                    <button type="submit" class="modal-form__send-butt button">Отправить</button>
                                      
            </form>
         </div>
